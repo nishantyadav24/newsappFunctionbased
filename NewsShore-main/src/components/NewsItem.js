@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NewsItem extends Component {
-    render() {
-        const { imageUrl, title, description, newsUrl, author, date, source } = this.props; // Destructuring props
+
+const NewsItem  =(props)=> {
+ 
+        const { imageUrl, title, description, newsUrl, author, date, source } = props; // Destructuring props
         return (
             <div className="container my-3">
                 <div className="card" style={{ width: "18rem", position: "relative" }}> {/* Added relative positioning */}
@@ -21,6 +22,6 @@ class NewsItem extends Component {
             </div>
         );
     }
-}
+
 
 export default NewsItem;
